@@ -26,7 +26,7 @@ wget https://github.com/0rdmin/0rdmin/archive/refs/tags/0rdmin.tar.gz
 
 2. Unzip the file:
 ```
-tar zxvf 0rdmin-0.3.0.tar.gz
+tar zxvf 0rdmin.tar.gz
 ```
 
 
