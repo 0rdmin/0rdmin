@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordmin</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm" action="" method="POST">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>    
+    fetch('config.js')
+      .then(response => response.json())
+      .then(config => {        
+        document.getElementById('loginForm').action = `http://${config.ip_server}:3000/login`;
+      })
+      .catch(error => console.error('Failed to fetch config:', error));
+  </script>
+
+  <script src="../ordminlib.js"></script>
+  <script>    
+    document.body.innerHTML += createFooter();
+  </script>
+
+</body>
+</html>
