@@ -21,12 +21,12 @@
 
 1. Download/Clone the repository: 
 ```
-wget https://github.com/0rdmin/0rdmin/archive/refs/tags/0rdmin.tar.gz
+wget https://github.com/0rdmin/0rdmin/archive/refs/tags/0rdmin-v.0.3.1.tar.gz
 ```
 
 2. Unzip the file:
 ```
-tar zxvf 0rdmin.tar.gz
+tar zxvf 0rdmin-v.0.3.1.tar.gz
 ```
 
 
@@ -112,7 +112,7 @@ sudo visudo
 3. Add permission for your user
 ```
 user  ALL=(ALL) ALL
-user ALL=(ALL) NOPASSWD: /home/user/ord-0.18.2/ord
+user ALL=(ALL) NOPASSWD: /home/user/ord-0.18.3/ord
 user ALL=(ALL) NOPASSWD: /usr/bin/killall ord
 ```
 
