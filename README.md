@@ -57,11 +57,16 @@ Before running the project, make sure to configure the following settings in the
 
 ### Usage
 
-1. Start the server:
+1. Create User:
+Create a username and password to access your 0rdmin Server.
+`node createUser.js`
+
+3. Start the server:
 `node server.js`
 
-2. Access the application through a web browser at http://localhost:3000.
+4. Access the application through a web browser at http://localhost:3000.
 
+### Video Demo
 https://github.com/0rdmin/0rdmin/assets/167829833/df04096f-d698-4e2e-9137-a729b4d8e2d5
 
 ### Endpoints
