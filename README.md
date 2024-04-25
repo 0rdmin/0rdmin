@@ -20,7 +20,9 @@
 ### Installation
 
 1. Download/Clone the repository: 
-
+```
+wget https://github.com/0rdmin/0rdmin/archive/refs/tags/0rdmin.tar.gz
+```
 
 2. Unzip the file:
 ```
