@@ -23,7 +23,9 @@
 
 
 2. Unzip the file:
-`tar zxvf 0rdmin-0.3.0.tar.gz`
+```
+tar zxvf 0rdmin-0.3.0.tar.gz
+```
 
 
 3. Install Node.js
@@ -40,29 +42,38 @@ npm -v
 ```
 
 5. Install Packs
+```
 npm install sqlite3
 npm install bcrypt
 npm install express
 npm install axios
 npm install express-session
+```
 
 
 ### Configuration
 Before running the project, make sure to configure the following settings in the config.js file:
 
-- bitcoin_path: Path to the Bitcoin executable.
-- ord_path: Path to the Ord executable.
+- address_main: Your address.
+- address_return: Your address return.
+- ip_server: Your ip server.
 - cookie_file: Path to the cookie file.
+- bitcoin_path: Path to the Bitcoin executable.
+- ord_path: Path to the Ord executable. (SUDO NOPASSWD)
 
 
 ### Usage
 
 1. Create User:
 Create a username and password to access your 0rdmin Server.
-`node createUser.js`
+```
+node createUser.js
+```
 
 3. Start the server:
-`node server.js`
+```
+node server.js
+```
 
 4. Access the application through a web browser at http://localhost:3000.
 
@@ -92,7 +103,9 @@ If you are running with another user other than root.
 If you are trying to start ord and it asks for a sudo password. Take these steps to resolve it.
 
 1. Open visudo
-`sudo visudo`
+```
+sudo visudo
+```
 
 3. Add permission for your user
 ```
